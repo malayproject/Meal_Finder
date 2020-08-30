@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px;
+  background-color: rgb(30, 30, 30);
+}
+h1 {
+  margin: 40px 0px 30px 0px;
+  color: rgb(255, 221, 68);
+}
+.query {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+}
+.form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.resultHeading {
+  padding-top: 35px;
+  color: aqua;
+}
+.searchBar {
+  margin-right: 0px;
+  padding: 3px;
+  border-right: none;
+  border-radius: 5px 0px 0px 5px;
+  border: 1px solid #999;
+  background-color: white;
+  height: 25px;
+}
+.search {
+  cursor: pointer;
+  margin-left: 0px;
+  height: 25px;
+  border-radius: 0px 3px 3px 0px;
+  border: 1px solid #999;
+}
+.random {
+  cursor: pointer;
+  height: 25px;
+  margin-left: 5px;
+  border: 1px solid #999;
+  border-radius: 3px;
+}
+.meals {
+  display: flex;
+  flex-direction: column;
+}
+.mealsImgRowDiv {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.mealImgDiv {
+  width: 130px;
+  height: 130px;
+  margin: 25px 25px;
+  border: 3px solid aqua;
+  border-radius: 15px;
+  cursor: pointer;
+  position: relative;
+}
+
+.mealName {
+  position: absolute;
+  margin-top: 20%;
+  width: 100%;
+  height: 80%;
+  color: white;
+  z-index: -1;
+  font-size: small;
+  text-align: center;
+  justify-items: center;
+}
+.mealImg:hover {
+  opacity: 0.2;
+}
+.mealImg {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  position: absolute;
+}
+.mealNameDesc {
+  color: rgb(248, 192, 7);
+  margin: 10px;
+  font-size: xx-large;
+  padding: 20px;
+  text-align: center;
+}
+.mealImgDesc {
+  width: 30%;
+  padding: 10px;
+  border-radius: 30px;
+}
+.mealCatAreaDesc {
+  border: 3px dotted orange;
+  width: 40%;
+
+  color: white;
+  margin: 10px;
+}
+.mealCategoryDesc {
+  text-align: center;
+  padding: 10px;
+}
+.mealAreaDesc {
+  text-align: center;
+  padding: 10px;
+}
+.mealIngredientsHeadingDesc {
+  text-align: center;
+  color: white;
+  font-size: x-large;
+  padding: 10px;
+}
+.mealIngredientsDesc {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 60%;
+}
+.mealIngAmtDesc {
+  background-color: palegoldenrod;
+  border-radius: 5px;
+  margin: 5px;
+  width: auto;
+  padding: 5px;
+  font-size: smaller;
+}
+.mealInstructionsHeadingDesc {
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: x-large;
+  font-weight: 400;
+}
+.mealInstructionsDesc {
+  color: white;
+  text-align: center;
+  padding: 10px;
+  text-justify: auto;
+  width: 70%;
+}
+.singleMeal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+@media (max-width: 1100px) {
+  .searchBar {
+  }
+  .mealsImgRowDiv {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 650px) {
+  .searchBar {
+  }
+  .mealsImgRowDiv {
+    grid-template-columns: 1fr 1fr;
+  }
+}
